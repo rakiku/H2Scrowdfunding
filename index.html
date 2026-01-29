@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ナタ風アイテム・プロジェクト</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- フォント読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="natlan-bg"></div>
+
+<div class="container">
+    <header>
+        <div class="tag">SPECIAL MISSION</div>
+        <h1 id="display-title">カチーナの特製お守り 製作</h1>
+    </header>
+
+    <main class="project-card">
+        <div class="item-visual">
+            <!-- 仮のアイテム名。ここに画像を入れられます -->
+            <div class="item-icon">🔥</div>
+            <div class="item-name-overlay" id="display-item-name">聖火の種</div>
+        </div>
+
+        <div class="status-section">
+            <div class="progress-info">
+                <span class="label">燃素注入率</span>
+                <span class="percent" id="percent-val">0%</span>
+            </div>
+            <div class="progress-outer">
+                <div class="progress-inner" id="progress-bar"></div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="val-group">
+                        <span class="current" id="current-val">0</span>
+                        <span class="slash">/</span>
+                        <span class="target" id="target-val">1,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 管理者パネル（常に表示） -->
+    <section class="admin-panel">
+        <h2 class="admin-title">管理者コマンド</h2>
+        <div class="admin-grid">
+            <input type="text" id="input-current" placeholder="現在の数">
+            <input type="password" id="admin-password" placeholder="パスワードを入力">
+            <button id="update-btn">データを同期する</button>
+        </div>
+        <p id="msg" class="message"></p>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
